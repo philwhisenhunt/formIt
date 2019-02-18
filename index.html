@@ -23,6 +23,7 @@
              $('#buttonID').on('click', function(){
                 var status = $('#holder').val();
                 console.log("The holder contains " + status);
+                $('.displayHere').html(status)
 
              });
          });
@@ -35,5 +36,7 @@
         <h3>Enter your name here:</h3>
         <input type="text" id="holder">
         <button type="submit" id='buttonID'>Submit</button>
+
+        <p class="displayHere"></p>
     </body>
 </html>
