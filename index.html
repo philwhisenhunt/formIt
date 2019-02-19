@@ -23,7 +23,9 @@
              $('#buttonID').on('click', function(){
                 var status = $('#holder').val();
                 console.log("The holder contains " + status);
-                $('.displayHere').html(status)
+                $('.displayHere').html("You're name is " + status);
+                $('.magic-button').html("<button>Next</button>");//or use jquery here?
+                
 
              });
          });
@@ -38,5 +40,6 @@
         <button type="submit" id='buttonID'>Submit</button>
 
         <p class="displayHere"></p>
+        <div class="magic-button"></div>
     </body>
 </html>
